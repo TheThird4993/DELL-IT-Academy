@@ -39,6 +39,8 @@ int* batalha(Empresa*, int);
 
 int compararPontuacao(const void*, const void*);
 
+void revanche();
+
 int main() {
 	Empresa* empresas;
 	unsigned int num_empresas = 0, rodadas = 1;
