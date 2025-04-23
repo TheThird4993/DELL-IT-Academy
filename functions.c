@@ -10,20 +10,20 @@ int pareamento(Startup* empresas, int quant, int* vet_perd) {
 	int vet_perdedores[TAM];
 	int num_duplas = 0, eliminados = 0;
 
-	//-------------------------------+ debug 1
-	//int vet_teste[TAM + 1] = { 0 };|
-	//-------------------------------+
+	// debug 1
+	//int vet_teste[TAM + 1] = { 0 };
+	//
 
 	for (int i = 0; i < TAM; i++) {
 		vet_perdedores[i] = vet_perd[i];
 	}
 
-	//---------------------------------+ debug 1
-	//for (int i = 0; i < quant; i++) {|
-	//	empresas[i].battle_id = -1;	   |
-	//	vet_teste[i] = -1;			   |
-	//}								   |
-	//---------------------------------+
+	
+	for (int i = 0; i < quant; i++) {
+		empresas[i].battle_id = -1;	   
+	//	vet_teste[i] = -1;			   
+	}								   
+	
 
 	for (int i = 0; i < TAM; i++) {
 		if (vet_perdedores[i] != -1) {
@@ -52,7 +52,7 @@ int pareamento(Startup* empresas, int quant, int* vet_perd) {
 		}
 		if (vet[var]) {
 			empresas[j].battle_id = var;
-			//vet_teste[j] = var; debug 1
+			//vet_teste[j] = var;
 			vet[var]--;
 		}
 		else j--;
