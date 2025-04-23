@@ -31,7 +31,7 @@ int main() {
 			printf("\nDigite o ano de fundacao da empresa: %d/%d\n", i + 1, num_empresas);
 			scanf("%d", &empresas[i].ano_f);
 
-			if (empresas[i].ano_f < 0) printf("Ano invalido\n");
+			if (empresas[i].ano_f < 0 || empresas[i].ano_f > 2025) printf("Ano invalido\n");
 			else break;
 		}
 		for (int j = 0; j < EVENTS; j++) {

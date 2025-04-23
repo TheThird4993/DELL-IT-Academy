@@ -378,7 +378,7 @@ int compararPontuacao(const void* a, const void* b) {
 void revanche(Startup* emp) {
 	for (int i = 0; i < 2; i++) emp[i].eventos = 31;
 	printf("+-----------------------+");
-	printf("\n| Revanche pelo titulo! |\n");
+	printf("\n| Batalha pelo titulo! |\n");
 	printf("+-----------------------+");
 	emp[1].pts += 20; //isso para a startup desafiante ter uma chance
 	rodada(0, 1, emp);

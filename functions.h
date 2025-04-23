@@ -5,7 +5,7 @@
 
 #include <stdio.h>							// input & output					
 #include <stdint.h>							// uint8_t para usar como flags
-#include <stdlib.h>							// para alocar dinamicamente a quantidade de empresas
+#include <stdlib.h>							// para alocar dinamicamente a quantidade de empresas e para utilizar o qsort
 #include <time.h>							// para gerar num "aleatorios"
 #include <string.h>                         // para utilizar o memcopy
 
